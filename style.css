@@ -25,6 +25,10 @@
   grid-template-columns: repeat(8, 1fr);
 }
 
+.square:nth-child(even) {
+  background-color: black;
+}
+
 .square--black {
   background-color: black;
 }
