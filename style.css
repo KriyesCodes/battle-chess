@@ -16,8 +16,19 @@
 }
 
 .board {
-  background-color: black;
+  border: 1px solid black;
   width: 600px;
   height: 600px;
   margin: 1rem auto;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.square--black {
+  background-color: black;
+}
+
+.square--white {
+  background-color: white;
 }
