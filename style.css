@@ -5,3 +5,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.board-container {
+  min-width: 1000px;
+  min-height: 700px;
+  width: 50vh;
+  height: 50vh;
+  border: 5px solid black;
+  margin: 1rem auto;
+}
+
+.board {
+  background-color: black;
+  width: 600px;
+  height: 600px;
+  margin: 1rem auto;
+}
