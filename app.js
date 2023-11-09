@@ -31,14 +31,6 @@ function createSquaresArray() {
 createBoardSquareElements();
 createSquaresArray();
 
-function dragstartHandler(ev) {
-  // Add the target element's id to the data transfer object
-  ev.dataTransfer.setData("text/plain", ev.target.id);
-  console.log('Dragging started');
-}
-
-piece.addEventListener('dragstart', dragstartHandler)
-
 const xInput = document.getElementById('xInput');
 const yInput = document.getElementById('yInput');
 const placeInButton = document.getElementById('placeInButton');
