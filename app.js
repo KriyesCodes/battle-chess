@@ -41,15 +41,18 @@ piece.addEventListener('dragstart', dragstartHandler)
 
 const xInput = document.getElementById('xInput');
 const yInput = document.getElementById('yInput');
-const colorInButton = document.getElementById('colorInButton');
+const placeInButton = document.getElementById('placeInButton');
 
-function colorInSquare(x, y) {
+function placeInSquare(x, y) {
   x = x % 8;
   y = y % 8;
 
-  squares[x][y].style.backgroundColor = 'Crimson';
+  const squareRect = squares[x][y].getBoundingClientRect();
+  console.log(squareRect);
+  piece.style.top = (squareRect.top + 20) + 'px';
+  piece.style.left = (squareRect.left + 10) + 'px';
 }
 
-colorInButton.addEventListener('click', (e) => {
-  colorInSquare(xInput.value, yInput.value);
+placeInButton.addEventListener('click', (e) => {
+  placeInSquare(xInput.value, yInput.value);
 })
