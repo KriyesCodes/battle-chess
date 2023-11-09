@@ -33,3 +33,10 @@
 .square:hover {
   border-width: 3px;
 }
+
+.piece {
+  position: absolute;
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: crimson;
+}
