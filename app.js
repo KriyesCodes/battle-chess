@@ -21,6 +21,7 @@ function createSquaresArray() {
   let eIndex = 0;
   for (let y = 7; y >= 0; --y) {
     for (let x = 0; x < 8; ++x) {
+      squareElements[eIndex].innerText = `(${x},${y})`;
       squares[x][y] = squareElements[eIndex];
       eIndex++;
     }
@@ -48,3 +49,7 @@ function colorInSquare(x, y) {
 
   squares[x][y].style.backgroundColor = 'Crimson';
 }
+
+colorInButton.addEventListener('click', (e) => {
+  colorInSquare(xInput.value, yInput.value);
+})
