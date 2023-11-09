@@ -41,3 +41,10 @@ piece.addEventListener('dragstart', dragstartHandler)
 const xInput = document.getElementById('xInput');
 const yInput = document.getElementById('yInput');
 const colorInButton = document.getElementById('colorInButton');
+
+function colorInSquare(x, y) {
+  x = x % 8;
+  y = y % 8;
+
+  squares[x][y].style.backgroundColor = 'Crimson';
+}
