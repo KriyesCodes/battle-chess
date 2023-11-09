@@ -23,16 +23,13 @@
 
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
 
-.square:nth-child(even) {
-  background-color: black;
+.square {
+  border: 1px solid black;
 }
 
-.square--black {
-  background-color: black;
-}
-
-.square--white {
-  background-color: white;
+.square:hover {
+  border-width: 3px;
 }
