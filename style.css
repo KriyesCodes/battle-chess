@@ -52,3 +52,7 @@
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
+
+.cards {
+  background-color: antiquewhite;
+}
