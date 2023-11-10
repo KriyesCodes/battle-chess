@@ -40,3 +40,15 @@
   aspect-ratio: 1;
   background-color: crimson;
 }
+
+
+.cards-interface {
+  position: fixed;
+  background-color: dodgerblue;
+  top: 80vh;
+  bottom: 0;
+  left: 20vw;
+  right: 20vw;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
