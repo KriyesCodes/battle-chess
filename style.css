@@ -55,8 +55,22 @@
 
 .cards {
   background-color: antiquewhite;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5px, max-content));
 }
 
 .deck {
   background-color: burlywood;
+}
+
+.card {
+  width: 12em;
+  height: 12em;
+  padding: 3px;
+  margin: 2px;
+  background-color: lightgreen;
+  border-style: solid;
+  transform: rotate(3deg);
+  /*makes it easier to see the overlap*/
 }
