@@ -74,3 +74,7 @@
   transform: rotate(3deg);
   /*makes it easier to see the overlap*/
 }
+
+.card:hover {
+  transform: rotate(0) translateY(-40px);
+}
