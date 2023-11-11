@@ -65,8 +65,8 @@
 }
 
 .card {
-  width: 12em;
-  height: 12em;
+  height: 200px;
+  aspect-ratio: 9/12;
   padding: 3px;
   margin: 2px;
   background-color: lightgreen;
