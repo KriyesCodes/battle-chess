@@ -74,7 +74,6 @@
 	margin: 2px;
 	background-color: lightgreen;
 	border-style: solid;
-	transform: rotate(3deg);
 	/*makes it easier to see the overlap*/
 	display: flex;
 	justify-content: center;
@@ -85,4 +84,8 @@
 
 .card:hover {
 	transform: rotate(0) translateY(-30px);
+}
+
+.card--inHand {
+	transform: rotate(3deg);
 }
