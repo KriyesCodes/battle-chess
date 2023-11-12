@@ -75,5 +75,5 @@
 }
 
 .card:hover {
-	transform: rotate(0) translateY(-40px);
+	transform: rotate(0) translateY(-30px);
 }
