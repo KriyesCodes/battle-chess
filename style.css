@@ -1,80 +1,79 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 .board-container {
-  min-width: 1000px;
-  min-height: 700px;
-  width: 50vh;
-  height: 50vh;
-  border: 5px solid black;
-  margin: 1rem auto;
+	min-width: 1000px;
+	min-height: 700px;
+	width: 50vh;
+	height: 50vh;
+	border: 5px solid black;
+	margin: 1rem auto;
 }
 
 .board {
-  border: 1px solid black;
-  width: 600px;
-  height: 600px;
-  margin: 1rem auto;
+	border: 1px solid black;
+	width: 600px;
+	height: 600px;
+	margin: 1rem auto;
 
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 1fr);
 }
 
 .square {
-  border: 1px solid black;
+	border: 1px solid black;
 }
 
 .square:hover {
-  border-width: 3px;
+	border-width: 3px;
 }
 
 .piece {
-  position: absolute;
-  width: 50px;
-  aspect-ratio: 1;
-  background-color: crimson;
+	position: absolute;
+	width: 50px;
+	aspect-ratio: 1;
+	background-color: crimson;
 }
 
-
 .cards-interface {
-  position: fixed;
-  background-color: dodgerblue;
-  top: 80vh;
-  bottom: 0;
-  left: 20vw;
-  right: 20vw;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
+	position: fixed;
+	background-color: dodgerblue;
+	top: 80vh;
+	bottom: 0;
+	left: 20vw;
+	right: 20vw;
+	display: grid;
+	grid-template-columns: 4fr 1fr;
 }
 
 .cards {
-  background-color: antiquewhite;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5px, max-content));
+	background-color: antiquewhite;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(5px, max-content));
 }
 
 .deck {
-  background-color: burlywood;
+	background-color: burlywood;
 }
 
 .card {
-  height: 200px;
-  aspect-ratio: 9/12;
-  padding: 3px;
-  margin: 2px;
-  background-color: lightgreen;
-  border-style: solid;
-  transform: rotate(3deg);
-  /*makes it easier to see the overlap*/
+	height: 200px;
+	aspect-ratio: 9/12;
+	padding: 3px;
+	margin: 2px;
+	background-color: lightgreen;
+	border-style: solid;
+	transform: rotate(3deg);
+	/*makes it easier to see the overlap*/
 }
 
 .card:hover {
-  transform: rotate(0) translateY(-40px);
+	transform: rotate(0) translateY(-40px);
 }
