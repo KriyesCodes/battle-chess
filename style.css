@@ -72,6 +72,11 @@
 	border-style: solid;
 	transform: rotate(3deg);
 	/*makes it easier to see the overlap*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 4rem;
 }
 
 .card:hover {
