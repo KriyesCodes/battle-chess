@@ -53,12 +53,12 @@ async function createCardObjects() {
 function createCardElement(name) {
 	card = document.createElement("div");
 	cardInner = document.createElement("div");
-	cardInner.classList.append("card-inner", "card-inner--inHand");
+	cardInner.classList.add("card-inner", "card-inner--inHand");
 	cardFront = document.createElement("div");
-	cardFront.classList.append("card-front");
-	cardFront.innerText = name;
+	cardFront.classList.add("card-front");
+	cardFront.innerText = String(name);
 	cardBack = document.createElement("div");
-	cardBack.classList.append("card-back");
+	cardBack.classList.add("card-back");
 
 	cardInner.appendChild(cardFront);
 	cardInner.appendChild(cardBack);
@@ -67,6 +67,7 @@ function createCardElement(name) {
 	return card;
 }
 
+console.log(createCardElement(0));
 createBoardSquareElements();
 createSquaresArray();
 
