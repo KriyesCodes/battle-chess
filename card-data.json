@@ -1,0 +1,42 @@
+{
+	"0": {
+		"name": "pawn",
+		"type": "unit"
+	},
+	"1": {
+		"name": "bishop",
+		"type": "unit"
+	},
+	"2": {
+		"name": "knight",
+		"type": "unit"
+	},
+	"3": {
+		"name": "rook",
+		"type": "unit"
+	},
+	"4": {
+		"name": "king",
+		"type": "unit"
+	},
+	"5": {
+		"name": "queen",
+		"type": "unit"
+	},
+	"6": {
+		"name": "fireball",
+		"type": "spell"
+	},
+	"7": {
+		"name": "gust",
+		"type": "spell"
+	},
+	"8": {
+		"name": "trapdoor",
+		"type": "trap"
+	},
+	"9": {
+		"name": "flood",
+		"type": "trap"
+	}
+}
