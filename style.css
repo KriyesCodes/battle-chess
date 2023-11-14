@@ -64,6 +64,7 @@
 }
 
 .deck {
+	position: relative;
 	background-color: burlywood;
 }
 
@@ -108,10 +109,28 @@
 	transform: rotateY(180deg);
 }
 
-.card--inHand {
+.card-inner--inHand {
 	transform: rotate(3deg);
 }
 
-.card--inHand:hover {
+.card-inner--inHand:hover {
 	transform: rotate(0) translateY(-30px);
+}
+
+.card--inDeck {
+	position: absolute;
+	right: -50px;
+	bottom: 80px;
+}
+
+.card-inner--inDeck {
+	transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.deck:not(:first-child) {
+	pointer-events: none;
+}
+
+.deck:first-child:first-child:hover {
+	transform: none;
 }
