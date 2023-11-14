@@ -69,8 +69,20 @@ function createCardElement(name) {
 	return card;
 }
 
+function createRandomCardHand(quantity) {
+	for (let i = 0; i < quantity; ++i) {
+		const randNum = Math.floor(Math.random() * cards.length);
+		const card = cards.splice(randNum, 1);
+		cardsHand.appendChild(createCardElement(card[0]["name"]));
+	}
+}
+
 createBoardSquareElements();
 createSquaresArray();
+createCardObjects();
+setTimeout(() => {
+	createRandomCardHand(5);
+}, 500);
 
 const xInput = document.getElementById("xInput");
 const yInput = document.getElementById("yInput");
