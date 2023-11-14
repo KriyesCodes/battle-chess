@@ -1,5 +1,6 @@
 const board = document.getElementById("board");
 const piece = document.getElementsByClassName("piece")[0];
+const cardsHand = document.getElementById("cardsHand");
 
 let squares = [[], [], [], [], [], [], [], []];
 let cardObjects = [];
@@ -52,6 +53,7 @@ async function createCardObjects() {
 
 function createCardElement(name) {
 	card = document.createElement("div");
+	card.classList.add("card");
 	cardInner = document.createElement("div");
 	cardInner.classList.add("card-inner", "card-inner--inHand");
 	cardFront = document.createElement("div");
@@ -67,7 +69,6 @@ function createCardElement(name) {
 	return card;
 }
 
-console.log(createCardElement(0));
 createBoardSquareElements();
 createSquaresArray();
 
