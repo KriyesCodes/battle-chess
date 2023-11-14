@@ -2,6 +2,7 @@ const board = document.getElementById("board");
 const piece = document.getElementsByClassName("piece")[0];
 
 let squares = [[], [], [], [], [], [], [], []];
+let cardObjects = [];
 
 function createBoardSquareElements() {
 	for (let i = 0; i < 64; ++i) {
@@ -26,6 +27,16 @@ function createSquaresArray() {
 			eIndex++;
 		}
 	}
+}
+
+async function fetchCardData() {
+	await fetch("./card-data.json")
+		.then((response) => response.json())
+		.then((json) => {
+			for (let i = 0; i < Object.keys(json).length; ++i) {
+				cardObjects.push(json[i]);
+			}
+		});
 }
 
 createBoardSquareElements();
