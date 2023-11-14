@@ -47,7 +47,6 @@
 
 .cards-interface {
 	position: fixed;
-	background-color: dodgerblue;
 	top: 85vh;
 	bottom: 0;
 	left: 20vw;
@@ -65,7 +64,6 @@
 
 .deck {
 	position: relative;
-	background-color: burlywood;
 }
 
 .card {
@@ -119,18 +117,10 @@
 
 .card--inDeck {
 	position: absolute;
-	right: -50px;
-	bottom: 80px;
+	right: -20px;
+	bottom: 100px;
 }
 
-.card-inner--inDeck {
+.card--inDeck > .card-inner--inDeck {
 	transform: rotate3d(0, 1, 0, 180deg);
-}
-
-.deck:not(:first-child) {
-	pointer-events: none;
-}
-
-.deck:first-child:first-child:hover {
-	transform: none;
 }
