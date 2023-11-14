@@ -3,6 +3,7 @@ const piece = document.getElementsByClassName("piece")[0];
 
 let squares = [[], [], [], [], [], [], [], []];
 let cardObjects = [];
+let cards = [];
 
 function createBoardSquareElements() {
 	for (let i = 0; i < 64; ++i) {
@@ -37,6 +38,16 @@ async function fetchCardData() {
 				cardObjects.push(json[i]);
 			}
 		});
+}
+
+async function createCardObjects() {
+	await fetchCardData();
+
+	for (let i = 0; i < cardObjects.length; ++i) {
+		for (let j = 0; j < 3; ++j) {
+			cards.push(cardObjects[i]);
+		}
+	}
 }
 
 createBoardSquareElements();
