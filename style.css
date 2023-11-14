@@ -48,7 +48,7 @@
 .cards-interface {
 	position: fixed;
 	background-color: dodgerblue;
-	top: 80vh;
+	top: 85vh;
 	bottom: 0;
 	left: 20vw;
 	right: 20vw;
@@ -69,8 +69,8 @@
 
 .card {
 	background-color: transparent;
-	width: 150px;
-	aspect-ratio: 9/14;
+	width: 140px;
+	aspect-ratio: 4/5;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -113,5 +113,5 @@
 }
 
 .card--inHand:hover {
-	transform: rotate(0) translateY(-70px);
+	transform: rotate(0) translateY(-30px);
 }
